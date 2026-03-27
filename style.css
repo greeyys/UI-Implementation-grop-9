@@ -58,3 +58,12 @@ body {
 table { width: 100%; border-collapse: collapse; }
 th { text-align: left; padding: 12px; border-bottom: 2px solid var(--accent); }
 td { padding: 12px; border-bottom: 1px solid #334155; }
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #0ea5e9; /* Slightly darker shade of accent */
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
