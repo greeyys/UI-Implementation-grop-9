@@ -1,0 +1,12 @@
+# Lab 2: Advanced UI Implementation
+
+## Technical Specifications
+- **Layout:** CSS Grid with Mobile-First Media Queries.
+- **Accessibility:** High contrast (AA compliant) and ARIA landmark roles.
+- **Navigation:** Fully accessible via Tab + Enter keys.
+- **Storage:** Browser LocalStorage.
+
+## Testing Instructions
+1. Open **Chrome DevTools (F12)**.
+2. Go to **Lighthouse** and run an "Accessibility" audit.
+3. Use the **Device Toolbar** to switch between iPhone SE and iPad Pro to verify the Grid stack.

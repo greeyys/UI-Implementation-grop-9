@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Advanced Enrollment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard-container" role="main">
+        <header class="header">
+            <h1>Student Enrollment <span class="badge">v2.0</span></h1>
+        </header>
+        
+        <!-- CSS Grid Sidebar (Form) -->
+        <section class="sidebar" aria-labelledby="form-title">
+            <h2 id="form-title">Enrollment Portal</h2>
+            <form id="enrollmentForm" novalidate>
+                <div class="form-group">
+                    <label for="studentName">Full Name</label>
+                    <input type="text" id="studentName" aria-required="true" placeholder="e.g. John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="course">Academic Program</label>
+                    <select id="course" aria-required="true">
+                        <option value="">Select Program</option>
+                        <option value="CS">Computer Science</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="DS">Data Science</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary" aria-label="Submit Enrollment">Confirm Enrollment</button>
+            </form>
+        </section>
+
+        <!-- CSS Grid Main Content (Table) -->
+        <section class="main-content" aria-labelledby="list-title">
+            <h2 id="list-title">Active Directory</h2>
+            <div class="table-wrapper">
+                <table id="enrollmentTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Program</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList">
+                        <!-- Dynamic Rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
