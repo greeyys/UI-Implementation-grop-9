@@ -17,15 +17,15 @@ Dropdown menu for program selection
 🔹 Active Directory
 Displays:
 
-Student ID
-Student Name
-Program
-Actions (for future updates like edit/delete)
+**Student ID**
+**Student Name**
+**Program**
+**Actions (for future updates like edit/delete)**
 
 🛠️ Technologies Used
-HTML
-CSS
-JavaScript
+**HTML**
+**CSS**
+**JavaScript**
 
 <h2>Preview on IPAD-PRO</h2>
 <img width="400" height="524" alt="ipad-pro.JPG" src="https://raw.githubusercontent.com/greeyys/UI-Implementation-grop-9/075b852ca491e977c0876fc83106f7b3b290e9b6/ipad-pro.JPG" />
