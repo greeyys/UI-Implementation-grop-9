@@ -14,22 +14,33 @@ The Student Enrollment System v2.0 is a simple web-based application that allows
 📋 View enrolled students in an active directory
 
 ⚙️ Simple and clean user interface
+
 🖥️ User Interface
-🔹 Enrollment Portal
+
+## 🔹 Enrollment Portal
 Input field for student name
+
 Dropdown menu for program selection
+
 “Confirm Enrollment” button
-🔹 Active Directory
+
+## 🔹 Active Directory
 Displays:
 
 **Student ID**
+
 **Student Name**
+
 **Program**
+
 **Actions (for future updates like edit/delete)**
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
+
 **HTML**
+
 **CSS**
+
 **JavaScript**
 
 <h2>Preview on IPAD-PRO</h2>
