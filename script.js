@@ -34,6 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('labData', JSON.stringify(students));
         updateUI();
     };
+    
+    window.editStudent = (i) => {
+        const student = students[i];
+
+        const newName = prompt("Edit name:", student.name);
+        const newCourse = prompt("Edit course:", student.course);
+
+        if (newName && newCourse) {
+            students[i] = {
+                name: newName.trim(),
+                course: newCourse.trim()
+            };
+            saveData();
+            updateUI();
+        }
+    };
 
     updateUI();
 });
