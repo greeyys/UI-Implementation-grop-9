@@ -37,14 +37,10 @@ Full system operability is maintained through keyboard-only interactions:
 * iPhone SE: Confirmed that components stack vertically and the table remains usable via its responsive wrapper.
 * iPad Pro: Confirmed the grid successfully expands into the full desktop layout.
 
----
-
-## Device Simulation Results
 
 ### iPhone SE (Mobile View)
-![iPhone SE](./iPhone%20SE.JPG)
+![iPhone SE](./iPhone-SE.JPG)
 
 ### iPad Pro (Tablet/Desktop View)
-![iPad Pro](./iPad-pro.JPG)
-
+![iPad Pro](./ipad-pro.JPG)
 
