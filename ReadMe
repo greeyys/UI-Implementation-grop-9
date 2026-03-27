@@ -1,12 +1,40 @@
-# Lab 2: Advanced UI Implementation
+Lab 2 Report: Advanced UI Implementation
+Project Description
+This lab involved the development of an Advanced Enrollment Dashboard using a CSS Grid architecture. The primary focus was on implementing a responsive, mobile-first administrative interface capable of handling manual user registration and bulk data processing via CSV.
+Requirements Checklist1. CSS Grid & Responsive Layout
+The dashboard utilizes a mobile-first approach to ensure cross-device compatibility.
 
-## Technical Specifications
-- **Layout:** CSS Grid with Mobile-First Media Queries.
-- **Accessibility:** High contrast (AA compliant) and ARIA landmark roles.
-- **Navigation:** Fully accessible via Tab + Enter keys.
-- **Storage:** Browser LocalStorage.
+* Mobile View: The .dashboard-container is structured as a single-column stack by default.
+* Desktop View: A media query for screens wider than 1024px (iPad Pro) switches the layout to a two-column grid, featuring a 350px sidebar for the Enrollment Portal and a flexible area for the Active Directory table.
 
-## Testing Instructions
-1. Open **Chrome DevTools (F12)**.
-2. Go to **Lighthouse** and run an "Accessibility" audit.
-3. Use the **Device Toolbar** to switch between iPhone SE and iPad Pro to verify the Grid stack.
+2. Registration & Business Logic
+The system follows a specific hierarchy for user management:
+
+* Role Assignment: The first registered user is automatically assigned Admin status, while all subsequent registrations are classified as Employees.
+* Data Requirements: Registration requires an Email and Password, with a Name field provided as an optional input.
+* Workflow Constraints: The system requires all prior attendance to be uploaded before an employee's schedule can be updated.
+
+3. File Upload Specifications
+Two distinct CSV formats are supported for bulk operations:
+
+* Schedule Upload: Uses a three-column format (Email, Start Time, End Time) with times in 24-hour format (hh:mm:ss).
+* Attendance Upload: Handles complex data strings including Start Date, Time-In, End Date, Time-Out, Break, and Total Work durations.
+
+4. Accessibility Audit
+Evaluation via Chrome Lighthouse ensured high-performance standards:
+
+* Contrast: High-contrast color palettes (light background/dark text) are used to meet AA accessibility standards.
+* ARIA Landmarks: Semantic HTML5 landmarks (<main>, <section>) and ARIA roles like role="main" and aria-labelledby provide a clear navigational structure for screen readers.
+
+5. Keyboard Navigation
+Full system operability is maintained through keyboard-only interactions:
+
+* All interactive elements, including form inputs and action buttons, are reachable via the Tab key.
+* A distinct blue outline is applied to the :focus state in the CSS to provide clear visual feedback for keyboard users.
+
+6. Device Simulation
+
+* iPhone SE: Confirmed that components stack vertically and the table remains usable via its responsive wrapper.
+* iPad Pro: Confirmed the grid successfully expands into the full desktop layout.
+
+
