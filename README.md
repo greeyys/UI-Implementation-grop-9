@@ -1,7 +1,7 @@
 📘 Student Enrollment System 
 ## 📌 Overview
 
-The Student Enrollment System v2.0 is a simple web-based application that allows users to enroll students into an academic program and manage a directory of enrolled students.
+The Student Enrollment System v2.0 is a basic web application designed to help users register students into academic programs and maintain a list of enrolled students efficiently
 
 ## 🎯 Features
 
@@ -30,6 +30,10 @@ Displays:
 **Student ID**
 
 **Student Name**
+
+**Student Age**
+
+**Student Address**
 
 **Program**
 
